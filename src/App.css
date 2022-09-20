@@ -1,38 +1,291 @@
-.App {
+:root {
+  --azul: #3b82f6;
+  --blanco: #ffffff;
+  --gris-claro: #f5f5f5;
+  --gris: #94a3b8;
+  --gris-oscuro: #64748b;
+  --negro: #000;
+}
+
+h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
   text-align: center;
+   
+  
+  
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ 
+
+.contenedor{
+  
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 400px;
+   
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icons{
+  font-size: 45px;
+}
+
+.logo{
+  
   display: flex;
-  flex-direction: column;
+  margin-left: 30px;
   align-items: center;
+  gap: 1rem;
+}
+.icon-logo{
+  font-size: 35px;
+  border-right: 0.5px solid white;
+  padding-right: 8px;
+}
+
+.nombreLogo{
+   
+  padding: 0;
+
+}
+.nombreLogo h2 {
+  line-height: 1.5;
+  margin: 0;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.nombreLogo p{
+  margin: 0;
+  letter-spacing: 8px;
+  text-align: end;
+  font-size: 9px;
+}
+
+.enlaces{
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  
+}
+
+.header{
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  height: 80px;
+  
+   
+  color: white;
+  border-bottom: 1px solid white;
+   
+  
+  
+  margin-bottom: 0;
+}
+
+.icono-menu{
+  position: absolute;
+  display: flex;
+  gap: 2rem;
+   right: 50px;
+   font-size: 35px;
+   top: 25px;
+    
+   
+}
+
+.header li{
+  position: absolute;
+  list-style: none;
+}
+
+.toggle{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #eeeef0;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  z-index: 10000;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+.inicio{
+  background-image: url('https://img.freepik.com/fotos-premium/fondo-azul-degradado_44621-663.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  
+}
+
+ 
+
+.inicioAnimar{
+  transition-property: all;
+  transition-duration: 900ms;
+  transition-timing-function: ease-in;
+  background-image: url('https://img.pikbest.com/backgrounds/20190924/technology-background-with-blue-gradient-background-v_1559315jpg!bw700');
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+ 
+ 
+
+.proyecto{
+  background-image: url('https://img.pikbest.com/backgrounds/20190924/technology-background-with-blue-gradient-background-v_1559315jpg!bw700');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.proyectoAnimar{
+  transition-property: all;
+  transition-duration: 900ms;
+  transition-timing-function: ease-in;
+  background-image: url('https://img.freepik.com/fotos-premium/fondo-azul-degradado_44621-663.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contactos{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://img.freepik.com/fotos-premium/fondo-azul-degradado_44621-663.jpg');
+}
+
+.contactoAnimar{
+  transition-property: all;
+  transition-duration: 900ms;
+  transition-timing-function: ease-in;
+  
+  background-image: url('https://img.pikbest.com/backgrounds/20190924/technology-background-with-blue-gradient-background-v_1559315jpg!bw700');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+ 
+.imgsvg{
+  width: 20%;
+  height: 20%;
+}
+
+.logo-header{
+  width: 60px;
+  height: 60px;
+}
+
+
+.contenido-portada{
+  width: 100%;
+  height: 400px;
+  margin-top: -100px;
+  background-image: url('./components/Img/desarrollo-web.png');
+  background-size: 200%;
+  background-repeat: no-repeat;
+  animation:  movimiento 30s infinite linear alternate;
+}
+
+.capa-gradiant{
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, black, rgba(29, 29, 185, 0.329));
+ 
+   
+}
+
+.contenido-detalles{
+  width: 80%;
+  
+  position: relative;
+  border-radius: 8px;
+   
+  padding: 10px 50px;
+}
+.detalles{
+  color: white;
+  border: 1px solid rgba(85, 84, 84, 0.041);
+   margin-top: 100px;
+    
+  padding-left: 100px;
+}
+
+.detalles h2{
+  margin-top: 50px;
+  font-size: 55px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.37);
+}
+
+.detalles p{
+   
+  margin-top: -30px;
+   
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 24px;
+   
+}
+
+.detalles button{
+  font-size: 14px;
+  border: 1px s;
+  color: rgba(255, 255, 255, 0.37);
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.247);
+  border-radius: 4px ;
+  border-color: rgba(255, 255, 255, 0.096);
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  
+}
+@keyframes movimiento{
+  from{
+    background-position: bottom ;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+}to{
+  background-position: top right;
+}
+
+.contenedor-titulos-tabs{
+   
+}
+
+.titulos-tabs{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.titulo-tabs{
+  font-size: 25px;
+  font-weight: 900;
+}
+.contenedor-tabs{
+  width: 80%;
+  margin: 0 auto;
+  background-color: red;
 }
