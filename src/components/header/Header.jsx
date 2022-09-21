@@ -9,9 +9,9 @@ const Header = () => {
         <div className="logo">
            <CgCodeSlash className="icon-logo"/>
            <div className="nombreLogo">
-            <h2>C M </h2>
-            <p>Dev</p>
-
+            <h2>Carlos Montoya </h2>
+            <p>Developer</p>
+            
            </div>
            <div className="links">
              <a className="enlaces" href="experimentos">Experimentos</a>

@@ -19,9 +19,9 @@ const BloqueTabs = () => {
   return (
     <div className="contenedor-titulos-tabs">
       <div className="titulos-tabs">
-        <Tab handleIndex={handleIndex} index={1} titulo="Acceso a vivienda"  />
-        <Tab handleIndex={handleIndex} index={2} titulo="Mejoramiento de vivienda"  />
-        <Tab handleIndex={handleIndex} index={3} titulo="Vivir en comunidad"  />
+        <Tab handleIndex={handleIndex} index={1} titulo="App de Gestión de gastos"  />
+        <Tab handleIndex={handleIndex} index={2} titulo="App de Consumo de API (freeGame)"  />
+        <Tab handleIndex={handleIndex} index={3} titulo="landing pages"  />
         
       </div>
 
