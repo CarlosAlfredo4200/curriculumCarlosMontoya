@@ -1,10 +1,12 @@
  
-const Tab = ({handleIndex, index, titulo} ) => {
+const Tab = ({handleIndex, index,  titulo} ) => {
+
+ 
 
   return (
     <div>
       <div className="comp-titulo-tabs">
-        <div className={'titulo-tabs'} onClick={() => handleIndex(index)}>
+        <div className={ 'titulo-tabs'} onClick={() => handleIndex(index)}>
           {" "}
           {titulo}
         </div>

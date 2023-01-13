@@ -5,11 +5,11 @@ import arquitectura from "../Img/arquitectura.png";
 import juegos from "../Img/juegos.png";
 
 const TabContenido = ({ index }) => {
-  const titulos = {
-    1: "App de Gestión de gastos",
-    2: "App de Consumo de API (freeGame)",
-    3: "landing pages",
-  };
+  // const titulos = {
+  //   1: "App de Gestión de gastos",
+  //   2: "App de Consumo de API (freeGame)",
+  //   3: "landing pages",
+  // };
 
   const parrafos = {
     1: {
@@ -32,12 +32,12 @@ const TabContenido = ({ index }) => {
 
   const indexDefault = 1;
 
-  const titulo = titulos[index] || indexDefault;
+  
   const parrafo = parrafos[index] || indexDefault;
   const imagen = imagenes[index] || indexDefault;
-  console.log(titulo);
+  
 
-  console.log();
+  
   // console.log('valor del index desde tabcontenido :'+index);
 
   return (
@@ -63,7 +63,7 @@ const TabContenido = ({ index }) => {
             </p>
 
             <div>
-              <button className="btn-enviar">Ver mas...</button>
+              <a href="https://presupuestopersonal.netlify.app/"  className="btn-enviar" rel="noreferrer"  target="_blank" >Ver mas...</a>
            </div>
           </div>
 

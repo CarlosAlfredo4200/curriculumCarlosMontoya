@@ -1,19 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Tab from "./Tab";
 import TabContenido from "./TabContenido";
 
 
 const BloqueTabs = () => {
 
-  const [valorIndex, setValorIndex] = useState(1)
+  const [valorIndex, setValorIndex] = useState(1);
+   
+
   
 
   const handleIndex = (e) => {
     setValorIndex(e)
-    console.log(valorIndex);
+     
   };
     
-  
+   
    
 
   return (
@@ -29,6 +31,7 @@ const BloqueTabs = () => {
       <div className="mt-10 mx-5">
       <TabContenido  
          index={valorIndex} 
+         
      
     />
       </div>

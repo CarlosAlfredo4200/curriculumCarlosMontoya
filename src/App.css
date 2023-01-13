@@ -384,3 +384,15 @@ line-height: 1;
 .description{
   text-align: justify;
 }
+
+.titulo-tabs{
+  border-bottom: 2px solid black;
+  border-color: #063b9c;
+  
+} 
+
+ .titulo-tabs:hover{
+  border-color: green;
+}
+ 
+ 
