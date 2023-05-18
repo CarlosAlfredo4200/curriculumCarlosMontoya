@@ -7,11 +7,12 @@
   --negro: #000;
 }
 
+
 h1{
-   
+  
   text-transform: uppercase;
   text-align: center;
-   
+  
   
   
 }
@@ -25,6 +26,12 @@ body{
   margin: 0;
   padding: 0;
   
+}
+
+
+.subTitle{
+  font-family: 'Caveat', cursive;
+
 }
 
  
@@ -46,12 +53,14 @@ body{
 .logo{
   
   display: flex;
-  margin-left: 30px;
+  margin-left: 50px;
+  margin-top: 40px;
   align-items: center;
   gap: 1rem;
+   
 }
 .icon-logo{
-  font-size: 35px;
+  font-size: 65px;
   border-right: 0.5px solid white;
   padding-right: 8px;
 }
@@ -64,14 +73,14 @@ body{
 .nombreLogo h2 {
   line-height: 1.5;
   margin: 0;
-  font-size: 15px;
+  font-size: 25px;
   text-transform: uppercase;
 }
 .nombreLogo p{
   margin: 0;
   letter-spacing: 8px;
   text-align: end;
-  font-size: 9px;
+  font-size: 18px;
 }
 
 .enlaces{
@@ -92,9 +101,6 @@ body{
    
   color: white;
   border-bottom: 1px solid white;
-   
-  
-  
   margin-bottom: 0;
 }
 
@@ -197,12 +203,13 @@ body{
 
 .contenido-portada{
   width: 100%;
-  height: 400px;
+  height: 450px;
   margin-top: -100px;
   background-image: url('./components/Img/desarrollo-web.png');
   background-size: 200%;
   background-repeat: no-repeat;
   animation:  movimiento 30s infinite linear alternate;
+  -webkit-animation:  movimiento 30s infinite linear alternate;
 }
 
 .capa-gradiant{
@@ -214,12 +221,12 @@ body{
 }
 
 .contenido-detalles{
-  width: 80%;
-  
+  width: 95%;
+  margin-left: 100px;
   position: relative;
   border-radius: 8px;
-   
-  padding: 10px 50px;
+  
+  padding: 10px;
 }
 .detalles{
   color: white;
@@ -231,20 +238,21 @@ body{
 
 .detalles h2{
   margin-top: 50px;
-  font-size: 55px;
+  font-size: 105px;
   line-height: 1;
   font-weight: 700;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.37);
+  color: rgba(255, 255, 255, 0.233);
 }
+
 
 .detalles p{
    
-  margin-top: -30px;
+  margin-top: -70px;
    
   text-transform: capitalize;
   letter-spacing: 2px;
-  font-size: 24px;
+  font-size: 30px;
    
 }
 

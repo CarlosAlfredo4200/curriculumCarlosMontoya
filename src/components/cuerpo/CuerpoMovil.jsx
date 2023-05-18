@@ -7,9 +7,9 @@ const CuerpoMovil = () => {
     <div className="capa-gradiant">
         <div className="contenido-detalles">
             <div className="detalles">
-                <h2>CARLOS MONTOYA</h2>
-                <p>Desarrollador frontend.</p>
-                <button>Mas detalles</button>
+                <h2 className='name'>CARLOS MONTOYA</h2>
+                <p className='subTitle'>Desarrollador frontend.</p>
+                
             </div>
         </div>
     </div>
