@@ -1,24 +1,25 @@
-import { } from "react-router-dom";
+import {} from "react-router-dom";
 import "./App.css";
-import Header from "./components/header/Header";
 
-import React, { } from "react";
+import React from "react";
 import CuerpoMovil from "./components/cuerpo/CuerpoMovil";
-
+import Carrusel from "./components/carrusel/Carrusel";
 import Practicas from "./components/practicas/Practicas";
 
 
 
 function App() {
-
-
   return (
-
     <>
-      <Header />
-      <CuerpoMovil />
+     
+          <CuerpoMovil />
+       <div className="base">
+         <Practicas />
+        <Carrusel />
+       </div>
+      
 
-      <Practicas />
+      
     </>
   );
 }

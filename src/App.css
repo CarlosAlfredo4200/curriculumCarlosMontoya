@@ -7,12 +7,21 @@
   --negro: #000;
 }
 
+.section {
+
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 200px;
+}
 
 h1{
   
   text-transform: uppercase;
   text-align: center;
-  
+  margin: 0;
   
   
 }
@@ -25,24 +34,34 @@ h1{
 body{
   margin: 0;
   padding: 0;
+  background-color: rgba(23,32,39,255);
   
 }
 
 
-.subTitle{
-  font-family: 'Caveat', cursive;
 
-}
 
  
-
-.contenedor{
-  
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  height: 400px;
+.logoPersonal{
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
    
+  align-items: center;
+  justify-content: space-evenly;
+ 
+  -webkit-border-radius: 10px ;
+  -moz-border-radius: 10px ;
+  -ms-border-radius: 10px ;
+  -o-border-radius: 10px ;
+}
+.dev{
+  font-size: 18px;
+  font-family: 'Caveat', cursive;
+  letter-spacing: 8px;
+  color: rgba(255, 255, 255, 0.657);
 
 }
 
@@ -50,17 +69,13 @@ body{
   font-size: 45px;
 }
 
-.logo{
-  
-  display: flex;
-  margin-left: 50px;
-  margin-top: 40px;
-  align-items: center;
-  gap: 1rem;
-   
+
+.nomLogo{
+  font-size: 15px;
 }
+
 .icon-logo{
-  font-size: 65px;
+  font-size: 35px;
   border-right: 0.5px solid white;
   padding-right: 8px;
 }
@@ -68,14 +83,16 @@ body{
 .nombreLogo{
    
   padding: 0;
-
+  
 }
 .nombreLogo h2 {
   line-height: 1.5;
   margin: 0;
   font-size: 25px;
   text-transform: uppercase;
+  
 }
+ 
 .nombreLogo p{
   margin: 0;
   letter-spacing: 8px;
@@ -94,13 +111,14 @@ body{
 
 .header{
   display: flex;
+  align-items: center;
   gap: 1rem;
   width: 100%;
   height: 100px;
-  
+   
    
   color: white;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.162);
   margin-bottom: 0;
 }
 
@@ -203,56 +221,69 @@ body{
 
 .contenido-portada{
   width: 100%;
-  height: 450px;
-  margin-top: -100px;
+  height: 550px;
+  margin-top: -150px;
   background-image: url('./components/Img/desarrollo-web.png');
   background-size: 200%;
   background-repeat: no-repeat;
-  animation:  movimiento 30s infinite linear alternate;
-  -webkit-animation:  movimiento 30s infinite linear alternate;
+  animation:  movimiento 40s infinite linear alternate;
+  -webkit-animation:  movimiento 40s infinite linear alternate;
+  
 }
 
 .capa-gradiant{
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(left, black, rgba(29, 29, 185, 0.329));
+  background: -webkit-linear-gradient(bottom, rgba(23,32,39,255),rgba(97, 97, 206, 0.329));
  
-   
+
 }
 
 .contenido-detalles{
-  width: 95%;
-  margin-left: 100px;
-  position: relative;
-  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
   
   padding: 10px;
 }
 .detalles{
+ 
   color: white;
   border: 1px solid rgba(85, 84, 84, 0.041);
-   margin-top: 100px;
-    
-  padding-left: 100px;
+  margin-top: 150px;
+  
+  
 }
 
 .detalles h2{
-  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   font-size: 105px;
-  line-height: 1;
-  font-weight: 700;
+  line-height: 0;
+   
+  font-weight: 900;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.233);
+  color: rgba(255, 255, 255, 0.672);
+  
+  
 }
 
 
 .detalles p{
+    /* font-family: 'Caveat', cursive; */
+  font-family: 'Orbitron', sans-serif;
    
-  margin-top: -70px;
-   
-  text-transform: capitalize;
+  line-height: 0;
+  text-align: center;
   letter-spacing: 2px;
-  font-size: 30px;
+  font-size: 16px;
+  margin-top: 140px;
+  color: rgba(255, 255, 255, 0.544);
+  
+  
+   
    
 }
 
@@ -403,4 +434,26 @@ line-height: 1;
   border-color: green;
 }
  
- 
+
+
+.base{
+
+  width: 90%;
+  height: 100vh;
+   
+  margin: 50px auto 10px; 
+
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(rgba(23,32,39,255), rgba(67,74,85,255));
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.contenedorPracticas{
+  margin-top: 50px;
+    border: 1px solid white;
+    color: white;
+}

@@ -1,10 +1,8 @@
 npm start
 
-while ((c = *str++) != 0)
-{
-hash = ((hash << 5) + hash) + c;
-}
-return (hash);
-}
-
+parallax
 https://www.youtube.com/watch?v=GqMicfY-DiQ
+
+
+carrusel
+https://www.youtube.com/watch?v=SK9AlIbexOE&ab_channel=MonsterlessonsAcademy

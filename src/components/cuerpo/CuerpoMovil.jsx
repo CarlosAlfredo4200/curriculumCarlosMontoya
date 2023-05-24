@@ -1,17 +1,19 @@
 import React from 'react'
+import Header from '../header/Header'
+ 
 
 const CuerpoMovil = () => {
   return (
     <div className='contenido-portada'> 
-    
     <div className="capa-gradiant">
-        <div className="contenido-detalles">
+       
             <div className="detalles">
+            <Header />
+                <p className='subTitle'>Vive tu creatividad, experimenta y da forma a nuevas ideas</p>
                 <h2 className='name'>CARLOS MONTOYA</h2>
-                <p className='subTitle'>Desarrollador frontend.</p>
-                
+                 
             </div>
-        </div>
+       
     </div>
     <div>
 

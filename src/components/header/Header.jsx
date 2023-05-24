@@ -1,31 +1,27 @@
 import React from "react";
 import { BsMenuDown } from "react-icons/bs";
-import { CgCodeSlash } from "react-icons/cg";
+
+import Logo from "../logo/Logo";
 
 const Header = () => {
   return (
     <header>
       <div className="header ">
         <div className="logo">
-           <CgCodeSlash className="icon-logo"/>
-           <div className="nombreLogo">
-            <h2>Carlos Montoya </h2>
-            <p>Developer</p>
-            
-           </div>
-           <div className="links">
-             <a className="enlaces" href="experimentos">Experimentos</a>
-             <a className="enlaces" href="Contact">Contacto</a>
-
-           </div>
+         <Logo />
         </div>
-
-        
+          
+          <div className="links">
+            <a className="enlaces" href="experimentos">
+              Experimentos
+            </a>
+            <a className="enlaces" href="Contact">
+              Contacto
+            </a>
+          </div>
 
         <div>
           <label className="icono-menu">
-
-         
             <BsMenuDown />
           </label>
         </div>
