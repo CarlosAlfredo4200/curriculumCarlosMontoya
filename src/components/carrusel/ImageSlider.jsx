@@ -17,69 +17,81 @@ const ImageSlider = ({ slides }) => {
     backgroundImage: `url(${slides[currentIndex].url})`,
   };
 
-
   const leftArrowStyles = {
-    position:"absolute",
-    top:"50%",
+    position: "absolute",
+    top: "50%",
     transform: "translate(0, -50%)",
-    left:"32px",
+    left: "32px",
     fontSize: "45px",
-    color:"white",
+    color: "white",
     zIndex: 1,
-    cursor:"pointer"
-  }
+    cursor: "pointer",
+  };
 
   const rightArrowStyles = {
-    position:"absolute",
-    top:"50%",
+    position: "absolute",
+    top: "50%",
     transform: "translate(0, -50%)",
-    right:"32px",
+    right: "32px",
     fontSize: "45px",
-    color:"white",
+    color: "white",
     zIndex: 1,
-    cursor:"pointer"
-  }
+    cursor: "pointer",
+  };
 
   const dotsContainerStyles = {
-     display: 'flex',
-     justifyContent: 'center'
-  }
+    display: "flex",
+    justifyContent: "center",
+  };
 
   const dotStyles = {
-    margin: '0 3px',
-    cursor: 'pointer',
-    fontSize:'50px',
-    color: "white"
+    margin: "0 3px",
+    cursor: "pointer",
+    fontSize: "50px",
+    color: "white",
+  };
+
+  function goToPrevious() {
+    const isFirtsSlide = currentIndex === 0;
+    const newIndex = isFirtsSlide ? slides.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
   }
 
-function goToPrevious() {
-    const isFirtsSlide = currentIndex === 0;
-    const newIndex = isFirtsSlide ? slides.length -1 : currentIndex -1;
+  function goToNext() {
+    const isFirtsSlide = currentIndex === slides.length - 1;
+    const newIndex = isFirtsSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
-}
+  }
 
-function goToNext() {
-    
-    const isFirtsSlide = currentIndex === slides.length -1;
-    const newIndex = isFirtsSlide ? 0 : currentIndex +1;
-    setCurrentIndex(newIndex);
-}
-
-const goToSlide = (slideIndex) => { setCurrentIndex(slideIndex)};
-
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
 
   return (
+    <>
     <div style={sliderStyles}>
-        <div style={leftArrowStyles} onClick={goToPrevious}>&lt;</div>
-        <div style={rightArrowStyles} onClick={goToNext} >&gt;</div>
+        
+      <div style={leftArrowStyles} onClick={goToPrevious}>
+        &lt;
+      </div>
+      <div style={rightArrowStyles} onClick={goToNext}>
+        &gt;
+      </div>
       <div style={slideStyles}></div>
-
       <div style={dotsContainerStyles}>
         {slides.map((slide, slideIndex) => (
-              <div key={slideIndex} style={dotStyles} onClick={() => goToSlide(slideIndex)}> __ </div>  
-))}
+          <div
+          key={slideIndex}
+          style={dotStyles}
+          onClick={() => goToSlide(slideIndex)}
+          >
+            {" "}
+            __{" "}
+          </div>
+        ))}
       </div>
     </div>
+    </>
   );
 };
 

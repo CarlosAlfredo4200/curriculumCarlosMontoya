@@ -1,8 +1,8 @@
 import React from "react";
 
 import gastos from "../Img/gastos.png";
-import arquitectura from "../Img/arquitectura.png";
 import juegos from "../Img/juegos.png";
+import dw from "../Img/Dw.png";
 
 const TabContenido = ({ index }) => {
   // const titulos = {
@@ -14,20 +14,33 @@ const TabContenido = ({ index }) => {
   const parrafos = {
     1: {
       tecnologia: "Javascript-Rect",
-      estilos: "CSS",
+      estilos: "Css",
       descripcion:
         "Es una app para gestionar presupuestos. Permite ingresar una cantidad he ir adicionando cada gastos diaros permitiendo la visualización inmediata de de tus gastos y el monto disponible. ",
+        url:"https://presupuestopersonal.netlify.app/"
     },
 
-    2: "Este programa responde a la política de Gobierno Nacional “Casa Digna, Vida Digna” una iniciativa que cuenta además con la participación del Ministerio de Vivienda y el Ministerio de Agricultura. Para este fin, el DPS aporta 325 mil de los 600 mil mejoramientos que hacen parte de esta política, que atenderá las necesidades básicas habitacionales de la población más vulnerable del país en zona rural y urbana.  ",
+    2:{
+      tecnologia: "Javascript-Rect, resposive",
+      estilos: "Css",
+      descripcion:
+        "Práctica consumo api freetogame con fetch en react y css. Listando la información en cards. ",
+        url:"https://consumoapifreetogame.netlify.app/"
+    },
 
-    3: "Cuando se habla de vivir en comunidad se entiende que un conjunto de personas vive en una misma estructura, bajo ciertas reglas de comportamiento social. Esta definición toma una forma más tangible en los residenciales donde diferentes parejas o familias conviven entre sí.",
+    3: {
+      tecnologia: "Javascript-Rect, responsive",
+      estilos: "Css",
+      descripcion:
+        "Práctica de landing pages con react y css ",
+        url:"https://carlosalfredo4200.github.io/dwfront/"
+    },
   };
 
   const imagenes = {
     1: gastos,
     2: juegos,
-    3: arquitectura,
+    3: dw,
   };
 
   const indexDefault = 1;
@@ -63,7 +76,7 @@ const TabContenido = ({ index }) => {
             </p>
 
             <div>
-              <a href="https://presupuestopersonal.netlify.app/"  className="btn-enviar" rel="noreferrer"  target="_blank" >Ver mas...</a>
+              <a href={parrafo.url}  className="btn-enviar" rel="noreferrer"  target="_blank" >Ver mas...</a>
            </div>
           </div>
 
