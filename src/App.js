@@ -1,4 +1,4 @@
-import {} from "react-router-dom";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import "./App.css";
 
 import React from "react";
@@ -12,13 +12,14 @@ import ContainerCarrusel from "./components/carrusel/ContainerCarrusel";
 function App() {
   return (
     <>
-     
+     <BrowserRouter>
           <CuerpoMovil />
        <div className="base">
          <Practicas />
         <ContainerCarrusel />
        </div>
           <CuerpoMovil />
+     </BrowserRouter>
       
 
       

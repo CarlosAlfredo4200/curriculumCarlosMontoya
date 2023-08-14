@@ -52,10 +52,7 @@ body{
   align-items: center;
   justify-content: space-evenly;
  
-  -webkit-border-radius: 10px ;
-  -moz-border-radius: 10px ;
-  -ms-border-radius: 10px ;
-  -o-border-radius: 10px ;
+  
 }
 .dev{
   font-size: 18px;
@@ -65,8 +62,25 @@ body{
 
 }
 
+.headerPersonal{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+   
+   
+}
+ 
 .icons{
   font-size: 45px;
+}
+
+.header-img{
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+
 }
 
 
@@ -126,9 +140,9 @@ body{
   position: absolute;
   display: flex;
   gap: 2rem;
-   right: 50px;
-   font-size: 35px;
-   top: 25px;
+  right: 50px;
+  font-size: 35px;
+  top: 25px;
     
    
 }
@@ -244,31 +258,47 @@ body{
   flex-direction: column;
   text-align: center;
   padding: 10px;
+   
+   
 }
 .detalles{
  
   color: white;
   border: 1px solid rgba(85, 84, 84, 0.041);
   margin-top: 150px;
+   
   
   
 }
 
-.detalles h2{
+.hi{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #c5c6c7;
+   
+}
+
+ 
+
+.hi h2{
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 105px;
   line-height: 0;
   font-weight: 900;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.672);
+  margin-left: 20px;
+  margin-top: 50px; 
+  color: white;
   
   
 }
 
 
-.detalles p{
+
+.subTitle{
     /* font-family: 'Caveat', cursive; */
   font-family: 'Orbitron', sans-serif;
    
@@ -276,7 +306,7 @@ body{
   text-align: center;
   letter-spacing: 2px;
   font-size: 16px;
-  margin-top: 140px;
+   
   color: rgba(255, 255, 255, 0.544);
   
   

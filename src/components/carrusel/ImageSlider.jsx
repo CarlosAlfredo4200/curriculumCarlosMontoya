@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const ImageSlider = ({ slides }) => {
+  const timerRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const sliderStyles = {
@@ -67,30 +68,38 @@ const ImageSlider = ({ slides }) => {
     setCurrentIndex(slideIndex);
   };
 
+  useEffect(() =>  {
+     
+    timerRef.current = setTimeout(() => {
+      goToNext();
+    }, 2000);
+  });
+
+
   return (
     <>
-    <div style={sliderStyles}>
-        
-      <div style={leftArrowStyles} onClick={goToPrevious}>
-        &lt;
+      <div style={sliderStyles}>
+
+        <div style={leftArrowStyles} onClick={goToPrevious}>
+          &lt;
+        </div>
+        <div style={rightArrowStyles} onClick={goToNext}>
+          &gt;
+        </div>
+        <div style={slideStyles}></div>
+        <div style={dotsContainerStyles}>
+          {slides.map((slide, slideIndex) => (
+            <div
+              key={slideIndex}
+              style={dotStyles}
+              onClick={() => goToSlide(slideIndex)}
+            >
+              {" "}
+              __{" "}
+            </div>
+          ))}
+        </div>
       </div>
-      <div style={rightArrowStyles} onClick={goToNext}>
-        &gt;
-      </div>
-      <div style={slideStyles}></div>
-      <div style={dotsContainerStyles}>
-        {slides.map((slide, slideIndex) => (
-          <div
-          key={slideIndex}
-          style={dotStyles}
-          onClick={() => goToSlide(slideIndex)}
-          >
-            {" "}
-            __{" "}
-          </div>
-        ))}
-      </div>
-    </div>
     </>
   );
 };

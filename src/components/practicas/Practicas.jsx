@@ -4,7 +4,7 @@ import BloqueTabs from '../Tabs/BloqueTabs'
 const Practicas = () => {
   return (
     <div className="contenedorPracticas">
-        <h1>Mis practicas</h1>
+        <h1>PORTAFOLIOS</h1>
         <BloqueTabs />
 
         
